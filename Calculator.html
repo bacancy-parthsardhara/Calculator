@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		button{
+			padding: 15px 32px;
+			margin: 10px;
+			background-color: white; 
+			border: 2px solid #008CBA;
+			background-color: #4CAF50;
+			color: black;
+			text-align: center;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		div{
+			border: 2px solid green; 
+			padding: 20px; 
+			margin: 100px; 
+			width: 30%;
+		}
+		#inp,#out{
+			text-align: left;
+			width: 93%;
+			height: 50px;
+			margin: 10px;
+			border: 1px solid green;
+			border-radius: 4px;
+		}
+		::placeholder {
+			color: black;
+			font-size: 23px;
+		}
+
+	</style>
+</head>
+<body>
+	<center>
+		<div>
+			<h1><u>CALCULATOR</u></h1>
+			<table>
+				
+				<tr>
+					<td colspan="4"><input type="text" id="inp" disabled="true" autocomplete="off" name="input" placeholder="Enter the value:"></td>
+				</tr>
+				<tr>
+					<td colspan="4"><input type="text" id="out" disabled="true" autocomplete="off" name="output" placeholder="output"></td>
+				</tr>
+				<tr>
+					<td><button id="btn7" value="7" onclick="myfun7()">7</button></td>
+					<td><button id="btn8" value="8" onclick="myfun8()">8</button></td>
+					<td><button id="btn9" value="9" onclick="myfun9()">9</button></td>
+					<td><button id="/" value="/" onclick="myfunndivision()">/</button></td>
+				</tr>
+				<tr>
+					<td><button id="btn4" value="4" onclick="myfun4()">4</button></td>
+					<td><button id="btn5" value="5" onclick="myfun5()">5</button></td>
+					<td><button id="btn6" value="6" onclick="myfun6()">6</button></td>
+					<td><button id="*" value="*" onclick="myfunnmultiplication()">*</button></td>
+				</tr>
+				<tr>
+					<td><button id="btn1" value="1" onclick="myfun1()">1</button></td>
+					<td><button id="btn2" value="2" onclick="myfun2()">2</button></td>
+					<td><button id="btn3" value="3" onclick="myfun3()">3</button></td>
+					<td><button id="-" value="-" onclick="myfunminus()">-</button></td>
+				</tr>
+				<tr>
+					<td><button id="ac" value="ac" onclick="myfunac()">ac</button></td>
+					<td><button id="btn0" value="0" onclick="myfun0()">0</button></td>
+					<td><button id="=" value="=" onclick="myfunoutput()">=</button></td>
+					<td><button id="+" value="+" onclick="myfunplus()">+</button></td>
+				</tr>	
+			</table>
+		</div>
+	</center>
+
+	<script type="text/javascript" src="Calculator.js">	
+	</script>
+</body>
+</html>
